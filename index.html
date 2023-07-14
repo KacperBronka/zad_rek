@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu_item active" data-redirect="index">
+        <div class="step_count">1</div>
+        <div class="step_name">definition</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/choose_products">
+        <div class="step_count">2</div>
+        <div class="step_name">choose products</div>
+      </div>
+      <div class="menu_item disabled" data-redirect="subpages/exclude_products">
+        <div class="step_count">3</div>
+        <div class="step_name">exclude products</div>
+      </div>
+      <div class="menu_item disabled" data-redirect="subpages/bonus_products">
+        <div class="step_count">4</div>
+        <div class="step_name">bonus products</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/product_limits">
+        <div class="step_count">5</div>
+        <div class="step_name">product limits</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/choose_clients">
+        <div class="step_count">6</div>
+        <div class="step_name">choose clients</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/exclude_clients">
+        <div class="step_count">7</div>
+        <div class="step_name">exclude clients</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/clients_limits">
+        <div class="step_count">8</div>
+        <div class="step_name">clients limits</div>
+      </div>
+      <div class="menu_item" data-redirect="subpages/summary">
+        <div class="step_count">9</div>
+        <div class="step_name">summary</div>
+      </div>
+    </nav>
+    <main>
+      <div class="data_input">
+        <div class="left">
+          <div class="section">
+            <span class="title">
+              <span class="name">Description</span>
+              <span class="info"><i class="fa-solid fa-star-of-life"></i> is required</span>
+            </span>
+            <div class="divider"></div>
+            <div class="info_icon">
+              <div class="required">
+                <input type="text" id="marketing_name" required placeholder="Marketing name" />
+              </div>
+            </div>
+            <div class="info_icon">
+              <input type="text" id="technical_name" placeholder="Technical name" />
+            </div>
+            <div class="info_icon">
+              <textarea id="description" cols="30" rows="8" placeholder="Description"></textarea>
+            </div>
+          </div>
+          <div class="section">
+            <span class="title">
+              <span class="name">Catalog Promotion tutorial:</span>
+            </span>
+            <div class="divider"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto cupiditate sint! Est repellendus accusantium neque nemo dolorum porro. Exercitationem deserunt nihil rem excepturi. Provident velit, incidunt odit recusandae
+              rerum esse. Mollitia quis quaerat provident, aperiam id inventore tempora culpa?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto cupiditate sint! Est repellendus accusantium neque nemo dolorum porro. Exercitationem deserunt nihil rem excepturi. Provident velit, incidunt odit recusandae
+              rerum esse. Mollitia quis quaerat provident, aperiam id inventore tempora culpa?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto cupiditate sint! Est repellendus accusantium neque nemo dolorum porro. Exercitationem deserunt nihil rem excepturi. Provident velit, incidunt odit recusandae
+              rerum esse. Mollitia quis quaerat provident, aperiam id inventore tempora culpa?
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="section">
+            <span class="title">
+              <span class="name">Conditions</span>
+              <span class="info"><i class="fa-solid fa-star-of-life"></i> is required</span>
+            </span>
+            <div class="divider"></div>
+            <div class="info_icon">
+              <div class="required">
+                <select required name="" id="dropdown1" value="portal">
+                  <option value="portal">Portal</option>
+                  <option value="lorem">Lorem</option>
+                  <option value="ipsum">Ipsum</option>
+                  <option value="dolor">Dolor</option>
+                </select>
+              </div>
+            </div>
+            <div class="info_icon">
+              <div class="required">
+                <select required name="" id="dropdown2">
+                  <option value="" disabled selected hidden>Type</option>
+                  <option value="sit">Sit</option>
+                  <option value="amet">Amet</option>
+                  <option value="consectetur">Consectetur</option>
+                  <option value="adipisicing">Adipisicing</option>
+                </select>
+              </div>
+            </div>
+            <div class="info_icon">
+              <input type="number" name="" id="benefit_amount" placeholder="Benefit amount" />
+            </div>
+            <div class="divider"></div>
+            <div class="dates info_icon">
+              <div class="required">
+                <input required type="date" id="start_date" oninput="this.className=(this.value!=''?'has_value':'')" placeholder="Start date" />
+              </div>
+              <input type="date" id="finish_date" oninput="this.className=(this.value!=''?'has_value':'')" placeholder="Finish date" />
+            </div>
+            <div class="prices info_icon">
+              <div class="radio_input">
+                <input type="radio" checked name="price" id="price_bussiness" value="bussiness" />
+                <label for="price_bussiness">Bussiness conditions</label>
+              </div>
+              <div class="radio_input">
+                <input type="radio" name="price" id="price_base" value="base" />
+                <label for="price_base">Base price 100%</label>
+              </div>
+            </div>
+            <div class="info_icon">
+              <input type="checkbox" name="" id="connect_w_other" />
+              <label for="connect_w_other">Connect with other promotions</label>
+            </div>
+            <div class="info_icon">
+              <input type="checkbox" name="" id="back_promotion" />
+              <label for="back_promotion">Back promotion</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
