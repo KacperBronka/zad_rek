@@ -8,7 +8,7 @@ function redirect(item) {
   var canRedirect = true;
   let pageName = item.dataset.redirect.replace("subpages/", "");
 
-  fetch("/blocked_pages.json")
+  fetch("./blocked_pages.json")
     .then((response) => response.json())
     .then((data) => {
       blockedPages = data.blocked;
