@@ -38,5 +38,5 @@ saveBtn.addEventListener("click", () => {
     return;
   }
   saveCurrentData();
-  location.pathname = "zad_rek/subpages/data_view.html";
+  location.pathname = "/zad_rek/subpages/data_view.html";
 });

@@ -37,7 +37,7 @@ editBtns.forEach((btn) => {
     let savedData = JSON.parse(localStorage.getItem("saved_data"));
     localStorage.setItem("step1_data", JSON.stringify(savedData[btn.dataset.id]));
     localStorage.setItem("editing_id", btn.dataset.id);
-    location.pathname = "zad_rek/index.html";
+    location.pathname = "/zad_rek/index.html";
   });
 });
 
