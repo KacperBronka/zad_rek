@@ -18,7 +18,7 @@ function redirect(item) {
       }
 
       if (canRedirect) {
-        location.pathname = item.dataset.redirect + ".html";
+        location.pathname = "zad_rek/" + item.dataset.redirect + ".html";
       }
     })
     .catch((error) => {
