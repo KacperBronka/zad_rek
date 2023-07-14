@@ -8,7 +8,7 @@ function redirect(item) {
   var canRedirect = true;
   let pageName = item.dataset.redirect.replace("subpages/", "");
 
-  fetch("/zad_rek/blocked_pages.json")
+  fetch("zad_rek/blocked_pages.json")
     .then((response) => response.json())
     .then((data) => {
       blockedPages = data.blocked;
@@ -18,7 +18,7 @@ function redirect(item) {
       }
 
       if (canRedirect) {
-        location.pathname = "/zad_rek/" + item.dataset.redirect + ".html";
+        location.pathname = "zad_rek/" + item.dataset.redirect + ".html";
       }
     })
     .catch((error) => {
